@@ -12,7 +12,7 @@ Push each updated animal string into the new array. Return the new array.
 HINT: Look at the tests to see how the callback functions are used.
 
 ------------------------------------------------------------------------------------------------ */
-testArr = ["test1", "TEST2", "teST3"];
+let testArr = ["test1", "TEST2", "teST3"];
 function upper(str) {
   return str.toUpperCase();
 }
