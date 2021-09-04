@@ -154,8 +154,18 @@ Write a function named sortByLength that takes in an array of strings and return
 
 const sortByLength = (arr) => {
   // Solution code here...
+  arr.sort((a, b) => {
+    if (a.length > b.length) {
+      return 1;
+    } else if (a.length < b.length) {
+      return -1;
+    } else {
+      return 0;
+    }
+  });
+  return arr;
 };
-
+// console.log(sortByLength(["abc", "a", "ab"]));
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 9 - Stretch Goal
 
