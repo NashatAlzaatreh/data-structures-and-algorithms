@@ -149,12 +149,12 @@ const listFoods = (recipe) => {
   let indexOfList;
   for (let i = 0; i < recipe.ingredients.length; i++) {
     indexOfList = recipe.ingredients[i].indexOf(" ", 5);
-    result.push(recipe.ingredients[i].slice(indexOflist + 1));
+    result.push(recipe.ingredients[i].slice(indexOfList + 1));
   }
 
   return result;
 };
-// console.log(listFoods(gruffaloCrumble));
+console.log(listFoods(gruffaloCrumble));
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
