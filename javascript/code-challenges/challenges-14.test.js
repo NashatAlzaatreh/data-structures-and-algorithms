@@ -189,6 +189,43 @@ Here is a sample board:
 
 const detectTicTacToeWin = (board) => {
   // Solution code here...
+  const newArray = [];
+  board.forEach((element) => {
+    element.forEach((value) => {
+      newArray.push(value);
+    });
+  });
+  for (let i = 0; i < 9; i + 3) {
+    if (
+      newArray[i] === newArray[i + 1] &&
+      newArray[i] === newArray[i + 2] &&
+      newArray[i] !== ""
+    ) {
+      return true;
+    } else {
+      for (let i = 0; i < 3; i++) {
+        if (
+          newArray[i] === newArray[i + 3] &&
+          newArray[i] === newArray[i + 6] &&
+          newArray[i] !== ""
+        ) {
+          return true;
+        } else {
+          for (let i = 0; i < 3; i + 2) {
+            if (
+              newArray[i] === newArray[4] &&
+              newArray[i] === newArray[8 - i] &&
+              newArray[i] !== ""
+            ) {
+              return true;
+            } else {
+              return false;
+            }
+          }
+        }
+      }
+    }
+  }
 };
 
 /* ------------------------------------------------------------------------------------------------
