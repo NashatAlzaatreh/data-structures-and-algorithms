@@ -85,10 +85,10 @@ describe("Linked List Insertions", () => {
     ll.append("a");
     ll.append("b");
     ll.append("c");
-    ll.insertBefore("b", "z");
+    ll.insertBefore("c", "z");
     expect(ll.head.value).toEqual("a");
-    expect(ll.head.next.value).toEqual("z");
-    expect(ll.head.next.next.value).toEqual("b");
+    expect(ll.head.next.value).toEqual("b");
+    expect(ll.head.next.next.value).toEqual("z");
   });
 
   it("Can successfully insert a node before the first node of a linked list", () => {
@@ -96,8 +96,8 @@ describe("Linked List Insertions", () => {
     ll.append("a");
     ll.append("b");
     ll.insertBefore("a", "z");
-    expect(ll.head.value).toEqual("z");
-    expect(ll.head.next.value).toEqual("a");
+    expect(ll.head.value).toEqual("a");
+    expect(ll.head.next.value).toEqual("b");
     expect(ll.head.next.next.next).toEqual(null);
   });
 
@@ -120,5 +120,45 @@ describe("Linked List Insertions", () => {
     expect(ll.head.next.value).toEqual("b");
     expect(ll.head.next.next.value).toEqual("z");
     expect(ll.head.next.next.next).toEqual(null);
+  });
+});
+
+describe("linked list kth", () => {
+  it("k is greater than the length of the list", () => {
+    const ll = new LinkedList();
+    ll.append("a");
+    ll.append("b");
+    expect(ll.kthFromEnd(2)).toEqual("exception");
+  });
+
+  it("k and the length of the list are the same", () => {
+    const ll = new LinkedList();
+    ll.append("a");
+    ll.append("b");
+    expect(ll.kthFromEnd(1)).toEqual("{ a }");
+  });
+
+  it("k is not a positive integer", () => {
+    const ll = new LinkedList();
+    ll.append("a");
+    ll.append("b");
+    expect(ll.kthFromEnd(-1)).toEqual("error");
+  });
+
+  it("the linked list is of a size 1", () => {
+    const ll = new LinkedList();
+    ll.append("a");
+    expect(ll.kthFromEnd(0)).toEqual("{ a }");
+  });
+
+  it("k is not at the end, but somewhere in the middle of the linked list", () => {
+    const ll = new LinkedList();
+    ll.append("a");
+    ll.append("b");
+    ll.append("c");
+    ll.append("d");
+    ll.append("f");
+    ll.append("g");
+    expect(ll.kthFromEnd(3)).toEqual("{ c }");
   });
 });
