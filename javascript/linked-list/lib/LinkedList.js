@@ -95,6 +95,17 @@ class LinkedList {
       newNode.next = nextNode;
     }
   }
+  kthFromEnd(k) {
+    if (k < 0) {
+      return "error";
+    }
+    let arr = this.toString(this.head).split(" -> ");
+    arr.pop();
+    if (k > arr.length - 1) {
+      return "exception";
+    }
+    return arr[arr.length - 1 - k];
+  }
 }
 
 module.exports = LinkedList;
