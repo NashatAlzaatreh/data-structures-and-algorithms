@@ -1,6 +1,7 @@
 "use strict";
 
 const LinkedList = require("../index");
+const { zipLists } = require("../lib/LinkedList");
 
 describe("Linked List", () => {
   it("Can successfully instantiate an empty linked list", () => {
@@ -160,5 +161,37 @@ describe("linked list kth", () => {
     ll.append("f");
     ll.append("g");
     expect(ll.kthFromEnd(3)).toEqual("{ c }");
+  });
+});
+
+describe("Linked-List-Zip", () => {
+  it("Linked-List-Zip works normally ", () => {
+    const ll1 = new LinkedList();
+    const ll2 = new LinkedList();
+    ll1.append("a");
+    ll1.append("b");
+    ll1.append("c");
+    ll2.append("1");
+    ll2.append("2");
+    ll2.append("3");
+    let list = zipLists(ll1, ll2);
+    expect(list.length).toBeGreaterThan(0);
+    expect(list).toEqual(
+      "{ a } -> { 1 } -> { b } -> { 2 } -> { c } -> { 3 } -> X"
+    );
+  });
+
+  it("ll1 greater than ll2", () => {
+    const ll1 = new LinkedList();
+    const ll2 = new LinkedList();
+    ll1.append("a");
+    ll1.append("b");
+    ll1.append("c");
+    ll2.append("1");
+    ll2.append("2");
+
+    let list = zipLists(ll1, ll2);
+    expect(list.length).toBeGreaterThan(0);
+    expect(list).toEqual("{ a } -> { 1 } -> { b } -> { 2 } -> { c } -> X");
   });
 });

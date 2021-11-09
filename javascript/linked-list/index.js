@@ -1,6 +1,7 @@
 "use strict";
 
-const LinkedList = require("./lib/LinkedList");
+const { LinkedList } = require("./lib/LinkedList");
+const { zipLists } = require("./lib/LinkedList");
 
 const ll = new LinkedList();
 
