@@ -107,5 +107,21 @@ class LinkedList {
     return arr[arr.length - 1 - k];
   }
 }
+function zipLists(list1, list2) {
+  let cur1 = list1.head;
+  let cur2 = list2.head;
+  let list3 = new LinkedList();
+  while (cur1 || cur2) {
+    if (cur1 != null) {
+      list3.append(cur1.value);
+      cur1 = cur1.next;
+    }
+    if (cur2 != null) {
+      list3.append(cur2.value);
+      cur2 = cur2.next;
+    }
+  }
+  return list3.toString();
+}
 
-module.exports = LinkedList;
+module.exports = { LinkedList, zipLists };

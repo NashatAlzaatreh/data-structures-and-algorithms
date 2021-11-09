@@ -7,3 +7,4 @@
 | 03    | array-binary-search    | [link](./javascript/array-binary-search/README.md)         |
 | 06    | linked-list-insertions | [link](./javascript/linked-list/linked-list-insertions.md) |
 | 07    | linked-list-kth        | [link](./javascript/linked-list/linked-list-kth.md)        |
+| 08    | linked-list-zip        | [link](./javascript/linked-list/linked-list-zip.md)        |
