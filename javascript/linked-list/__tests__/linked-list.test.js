@@ -2,6 +2,7 @@
 
 const LinkedList = require("../index");
 const { zipLists } = require("../lib/LinkedList");
+const { reveredList } = require("../lib/LinkedList");
 
 describe("Linked List", () => {
   it("Can successfully instantiate an empty linked list", () => {
@@ -193,5 +194,19 @@ describe("Linked-List-Zip", () => {
     let list = zipLists(ll1, ll2);
     expect(list.length).toBeGreaterThan(0);
     expect(list).toEqual("{ a } -> { 1 } -> { b } -> { 2 } -> { c } -> X");
+  });
+});
+
+describe("Revered Linked List", () => {
+  it("return reversed list", () => {
+    const ll = new LinkedList();
+    ll.append("1");
+    ll.append("2");
+    ll.append("3");
+    ll.append("4");
+    const ll2 = reveredList(ll);
+    expect(ll2.head.next.next.value).toEqual("3");
+    expect(ll2.head.next.value).toEqual("2");
+    expect(ll2.head.value).toEqual("1");
   });
 });
