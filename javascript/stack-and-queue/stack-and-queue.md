@@ -24,8 +24,8 @@
 
 ## Approach & Efficiency
 
-For the stack my approach was strait forward, create a class with one property and all of its methods. The time performance was O(1) for all methods, and space performance was O(n) for `push` and `pop`.  
-For the queue I added another property called `back` to the class and set the its value to be the last node in the queue (newest node). The time performance was O(1) for all methods, and space performance was O(n) for `enqueue` and `dequeue`.
+For the stack I create a class with one property and all of its methods. The time performance was O(1) for all methods, and space performance was O(n) for `push` and `pop`.  
+For the queue the time performance was O(1) for all methods, and space performance was O(n) for `enqueue` and `dequeue`.
 
 ## API
 
