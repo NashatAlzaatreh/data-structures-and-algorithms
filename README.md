@@ -8,3 +8,4 @@
 | 06    | linked-list-insertions | [link](./javascript/linked-list/linked-list-insertions.md) |
 | 07    | linked-list-kth        | [link](./javascript/linked-list/linked-list-kth.md)        |
 | 08    | linked-list-zip        | [link](./javascript/linked-list/linked-list-zip.md)        |
+| 10    | stack-and-queue        | [link](./javascript/stack-and-queue/stack-and-queue.md)    |
