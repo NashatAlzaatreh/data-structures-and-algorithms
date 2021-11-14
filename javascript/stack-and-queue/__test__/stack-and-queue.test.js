@@ -1,8 +1,9 @@
 "use strict";
 
 const Node = require("../Node");
-const Queue = require("../Queue");
+const { Queue } = require("../Queue");
 const Stack = require("../Stack");
+const { PseudoQueue } = require("../Queue");
 
 describe("stack test ", () => {
   it("Can successfully push onto a stack", () => {
@@ -84,7 +85,7 @@ describe("queue test ", () => {
     expect(queue).toBeDefined();
     expect(queue.front.value).toEqual(1);
     expect(queue.front.next.value).toEqual(2);
-    expect(queue.rare.value).toEqual(3);
+    expect(queue.rear.value).toEqual(3);
   });
 
   it("Can successfully dequeue out of a queue the expected value", () => {
@@ -130,5 +131,19 @@ describe("queue test ", () => {
 
     expect(queue.peek()).toEqual("The Queue is Empty");
     expect(queue.dequeue()).toEqual("The Queue is Empty");
+  });
+
+  it("Can successfully push using PseudoQueue", () => {
+    const pseudo = new PseudoQueue();
+    pseudo.enqueue(1);
+    expect(pseudo).toBeDefined();
+    expect(pseudo.front).toEqual(1);
+  });
+
+  it("Can successfully push using PseudoQueue", () => {
+    const pseudo = new PseudoQueue();
+    pseudo.dequeue(1);
+    expect(pseudo).toBeDefined();
+    expect(pseudo.front).toEqual(null);
   });
 });
