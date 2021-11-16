@@ -11,3 +11,4 @@
 | 10    | stack-and-queue            | [link](./javascript/stack-and-queue/stack-and-queue.md)            |
 | 11    | stack-queue-pseudo         | [link](./javascript/stack-and-queue/stack-queue-pseudo.md)         |
 | 12    | stack-queue-animal-shelter | [link](./javascript/stack-and-queue/stack-queue-animal-shelter.md) |
+| 13    | stack-queue-brackets       | [link](./javascript/stack-and-queue/stack-queue-brackets.md)       |
