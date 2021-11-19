@@ -12,4 +12,5 @@
 | 11    | stack-queue-pseudo         | [link](./javascript/stack-and-queue/stack-queue-pseudo.md)         |
 | 12    | stack-queue-animal-shelter | [link](./javascript/stack-and-queue/stack-queue-animal-shelter.md) |
 | 13    | stack-queue-brackets       | [link](./javascript/stack-and-queue/stack-queue-brackets.md)       |
-| 14    | max-stack                  | [link](./javascript/stack-and-queue/max-stack.js)       |
+| 14    | max-stack                  | [link](./javascript/stack-and-queue/max-stack.js)                  |
+| 15    | binary-tree                | [link](./javascript/trees/binary-tree.md)                          |
