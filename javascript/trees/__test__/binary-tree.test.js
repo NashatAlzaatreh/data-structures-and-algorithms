@@ -1,5 +1,5 @@
 "use strict";
-const BinaryTree = require("../binary-tree");
+const { BinaryTree } = require("../binary-tree");
 const Node = require("../Node");
 
 describe("Trees", () => {
