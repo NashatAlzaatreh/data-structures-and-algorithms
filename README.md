@@ -14,3 +14,4 @@
 | 13    | stack-queue-brackets       | [link](./javascript/stack-and-queue/stack-queue-brackets.md)       |
 | 14    | max-stack                  | [link](./javascript/stack-and-queue/max-stack.js)                  |
 | 15    | binary-tree                | [link](./javascript/trees/binary-tree.md)                          |
+| 16    | tree-max                   | [link](./javascript/trees/tree-max.md)                          |

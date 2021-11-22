@@ -53,6 +53,18 @@ class BinaryTree {
     _walk(this.root);
     return arrayOfReadNodes;
   }
+
+  treeMax() {
+    if (!this.root) throw new Error("Empty Tree");
+    let max = this.root.value;
+    const _traverse = (node) => {
+      if (node.value > max) max = node.value;
+      if (node.left) _traverse(node.left);
+      if (node.right) _traverse(node.right);
+    };
+    _traverse(this.root);
+    return max;
+  }
 }
 
 module.exports = BinaryTree;
