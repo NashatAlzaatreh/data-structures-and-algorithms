@@ -88,4 +88,25 @@ function breadthFirst(tree) {
   return final;
 }
 
-module.exports = { BinaryTree, breadthFirst };
+function oddSum(tree) {
+  let rootNode = tree.root;
+  if (rootNode === null) {
+    return "empty tree";
+  }
+  let sum = 0;
+  const _traverse = (node) => {
+    if (node.value % 2 !== 0) {
+      sum += node.value;
+    }
+    if (node.left) {
+      _traverse(node.left);
+    }
+    if (node.right) {
+      _traverse(node.right);
+    }
+  };
+  _traverse(tree.root);
+  return sum;
+}
+
+module.exports = { BinaryTree, breadthFirst, oddSum };

@@ -16,5 +16,5 @@
 | 15    | binary-tree                | [link](./javascript/trees/binary-tree.md)                          |
 | 16    | tree-max                   | [link](./javascript/trees/tree-max.md)                             |
 | 17    | breadth-first              | [link](./javascript/trees/breadth-first.PNG)                       |
-| 18    | tree-fizz-buzz              | [link](./javascript/trees/FizzBuzz.PNG)                       |
-
+| 18    | tree-fizz-buzz             | [link](./javascript/trees/FizzBuzz.PNG)                            |
+| 19    | odd-sum                    | [link](./javascript/trees/oddSum.PNG)                              |
