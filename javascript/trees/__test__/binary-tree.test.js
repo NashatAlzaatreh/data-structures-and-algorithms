@@ -1,5 +1,7 @@
 "use strict";
 const { BinaryTree } = require("../binary-tree");
+const { oddSum } = require("../binary-tree");
+
 const Node = require("../Node");
 
 describe("Trees", () => {
@@ -102,5 +104,35 @@ describe("Tree Max", () => {
     } catch (error) {
       expect(error.message).toBe("Empty Tree");
     }
+  });
+});
+
+describe("oddSum  test", () => {
+  let bi = new BinaryTree();
+  let node1 = new Node(1);
+  let node2 = new Node(2);
+  let node3 = new Node(3);
+  let node4 = new Node(4);
+  let node5 = new Node(5);
+  let node6 = new Node(6);
+  let node7 = new Node(7);
+  let node8 = new Node(8);
+  let node9 = new Node(9);
+
+  bi.root = node1;
+  bi.root.left = node2;
+  bi.root.right = node3;
+  bi.root.left.left = node4;
+  bi.root.left.right = node5;
+  bi.root.right.left = node6;
+  bi.root.right.right = node7;
+  bi.root.left.left.left = node8;
+  bi.root.left.left.right = node9;
+  test("oddSum function return the expected value ", () => {
+    expect(oddSum(bi)).toEqual(25);
+  });
+  test("fail", () => {
+    let bi2 = new BinaryTree();
+    expect(oddSum(bi2)).toStrictEqual("empty tree");
   });
 });
