@@ -18,3 +18,4 @@
 | 17    | breadth-first              | [link](./javascript/trees/breadth-first.PNG)                       |
 | 18    | tree-fizz-buzz             | [link](./javascript/trees/FizzBuzz.PNG)                            |
 | 19    | odd-sum                    | [link](./javascript/trees/oddSum.PNG)                              |
+| 26    | insertion-sort             | [link](./javascript/insertion-sort/BLOG.md)                        |
