@@ -19,3 +19,4 @@
 | 18    | tree-fizz-buzz             | [link](./javascript/trees/FizzBuzz.PNG)                            |
 | 19    | odd-sum                    | [link](./javascript/trees/oddSum.PNG)                              |
 | 26    | insertion-sort             | [link](./javascript/insertion-sort/BLOG.md)                        |
+| 27    | merge-sort                 | [link](./javascript/merge-sort/BLOG.md)                            |
