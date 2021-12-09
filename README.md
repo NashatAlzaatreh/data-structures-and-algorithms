@@ -21,3 +21,4 @@
 | 26    | insertion-sort             | [link](./javascript/insertion-sort/BLOG.md)                        |
 | 27    | merge-sort                 | [link](./javascript/merge-sort/BLOG.md)                            |
 | 28    | quick-sort                 | [link](./javascript/quick-sort/BLOG.md)                            |
+| 30    | hash-table                 | [link](./javascript/hashtable/hashtable/hashtable.md)              |
