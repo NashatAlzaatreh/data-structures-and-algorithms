@@ -36,6 +36,8 @@ class Hashtable {
     if (this.map[idx]) return true;
     return false;
   }
+
+  
 }
 
 module.exports = Hashtable;
