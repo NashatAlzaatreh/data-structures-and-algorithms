@@ -23,3 +23,4 @@
 | 28    | quick-sort                 | [link](./javascript/quick-sort/BLOG.md)                               |
 | 30    | hash-table                 | [link](./javascript/hashtable/hashtable/hashtable.md)                 |
 | 31    | hashmap-repeated-word      | [link](./javascript/hashtable/repeated-word/hashmap-repeated-word.md) |
+| 32    | tree-intersection          | [link](./javascript/hashtable/treeIntersection/tree-intersection.md)  |
