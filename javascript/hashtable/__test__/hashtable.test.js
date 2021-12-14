@@ -1,4 +1,4 @@
-const Hashtable = require("../hashtable/hashtable");
+const { Hashtable } = require("../hashtable/hashtable");
 
 describe("hash table tests", () => {
   it("Adding a key/value to your hashtable results in the value being in the data structure", async () => {
