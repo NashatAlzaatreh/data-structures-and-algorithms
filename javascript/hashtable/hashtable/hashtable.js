@@ -38,4 +38,19 @@ class Hashtable {
   }
 }
 
-module.exports = Hashtable;
+function leftJoin(lMap, rMap) {
+  const result = [];
+  for (let i in lMap.add) {
+    result.push(Object.entries(lMap.add[i].head.value)[0]);
+  }
+  for (let i in result) {
+    if (rMap.get(result[i][0])) {
+      result[i].push(rMap.get(result[i][0]));
+    } else {
+      result[i].push("null");
+    }
+  }
+  return result;
+}
+
+module.exports = { Hashtable, leftJoin };
